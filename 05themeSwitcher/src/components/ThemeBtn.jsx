@@ -3,13 +3,14 @@ import useTheme from "../contexts/theme";
 export default function ThemeBtn() {
   const { themeMode, toggleTheme } = useTheme();
 
-  const onChangeBtn = (e) => {
-    const darkModeStatus = e.currentTarget.checked;
-    if (darkModeStatus) {
-      toggleTheme();
-    } else {
-      toggleTheme();
-    }
+  const onChangeBtn = () => {
+    toggleTheme();
+    // const darkModeStatus = e.currentTarget.checked;
+    // if (darkModeStatus) {
+    //   toggleTheme();
+    // } else {
+    //   toggleTheme();
+    // }
   };
 
   return (
